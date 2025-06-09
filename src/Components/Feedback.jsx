@@ -38,8 +38,9 @@ const Feedback = () => {
         return new Promise((resolve) => {
           const reader = new FileReader();
           reader.onloadend = () => {
+            const base64String = reader.result.split(',')[1];
             resolve({
-              data: reader.result,
+              data: base64String,
               preview: URL.createObjectURL(file)
             });
           };
