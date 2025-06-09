@@ -11,6 +11,7 @@ import FrequentlyAsked from './Components/F&Qs';
 import TermsOfService from './Components/TermsOfService';
 import PrivacyPolicy from './Components/PrivacyPolicy';
 import WhatsAppButton from './Components/WhatsAppButton';
+import Feedback from './Components/Feedback';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
         <Route path="/frequently-asked" element={<FrequentlyAsked />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
 
       <Footer />
