@@ -14,7 +14,7 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
   marginBottom: theme.spacing(2),
   position: 'relative',
   textAlign: 'center',
-  
+
   '&:after': {
     content: '""',
     position: 'absolute',
@@ -75,11 +75,11 @@ const OurServices = () => (
         <SectionTitle variant="h4" component="h2">
           Inside The Platform
         </SectionTitle>
-       
+
       </Box>
     </Fade>
 
-    <Box sx={{ 
+    <Box sx={{
       display: 'flex',
       flexDirection: { xs: 'column', md: 'row' },
       alignItems: { xs: 'center', md: 'flex-end' },
@@ -88,7 +88,7 @@ const OurServices = () => (
       px: 2
     }}>
       {/* Left Cards Column */}
-      <Box sx={{ 
+      <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         gap: 6,
@@ -111,8 +111,8 @@ const OurServices = () => (
                 }
               }
             }}>
-              <Box mb={2} className="icon" sx={{ 
-                transition: "all 0.3s ease", 
+              <Box mb={2} className="icon" sx={{
+                transition: "all 0.3s ease",
                 color: "#4141DA",
                 padding: '14px',
                 width: '80px',
@@ -167,8 +167,8 @@ const OurServices = () => (
                 }
               }
             }}>
-              <Box mb={2} className="icon" sx={{ 
-                transition: "all 0.3s ease", 
+              <Box mb={2} className="icon" sx={{
+                transition: "all 0.3s ease",
                 color: "#4141DA",
                 padding: '14px',
                 width: '80px',
@@ -208,34 +208,34 @@ const OurServices = () => (
       </Box>
 
       {/* Middle Image */}
-     <Fade triggerOnce>
-  <Box
-    sx={{
-      display: { xs: 'none', md: 'block' }, // hide on xs and show on md+
-      width: { xs: '100%', md: '400px' },
-      flexShrink: 0,
-      px: { xs: 0, md: 2 },
-    }}
-  >
-    <Box
-      component="img"
-      src={middltImg}
-      alt="Platform overview"
-      sx={{
-        width: '100%',
-        height: '100%',
-        position: 'relative',
-        top: '20px',
-        minHeight: '700px',
-        objectFit: 'cover',
-      }}
-    />
-  </Box>
-</Fade>
+      <Fade triggerOnce>
+        <Box
+          sx={{
+            display: { xs: 'none', md: 'block' }, // hide on xs and show on md+
+            width: { xs: '100%', md: '400px' },
+            flexShrink: 0,
+            px: { xs: 0, md: 2 },
+          }}
+        >
+          <Box
+            component="img"
+            src={middltImg}
+            alt="Platform overview"
+            sx={{
+              width: '100%',
+              height: '100%',
+              position: 'relative',
+              top: '20px',
+              minHeight: '700px',
+              objectFit: 'cover',
+            }}
+          />
+        </Box>
+      </Fade>
 
 
       {/* Right Cards Column */}
-      <Box sx={{ 
+      <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         gap: 6,
@@ -258,8 +258,8 @@ const OurServices = () => (
                 }
               }
             }}>
-              <Box mb={2} className="icon" sx={{ 
-                transition: "all 0.3s ease", 
+              <Box mb={2} className="icon" sx={{
+                transition: "all 0.3s ease",
                 color: "#4141DA",
                 padding: '14px',
                 width: '80px',
@@ -314,8 +314,8 @@ const OurServices = () => (
                 }
               }
             }}>
-              <Box mb={2} className="icon" sx={{ 
-                transition: "all 0.3s ease", 
+              <Box mb={2} className="icon" sx={{
+                transition: "all 0.3s ease",
                 color: "#4141DA",
                 padding: '14px',
                 width: '80px',
@@ -357,4 +357,4 @@ const OurServices = () => (
   </Box>
 );
 
-export default OurServices;
+export default OurServices;

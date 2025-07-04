@@ -12,6 +12,7 @@ import TermsOfService from './Components/TermsOfService';
 import PrivacyPolicy from './Components/PrivacyPolicy';
 import WhatsAppButton from './Components/WhatsAppButton';
 import Feedback from './Components/Feedback';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,14 +27,14 @@ function App() {
     fakeDataFetch();
   }, []);
 
-  return  (
+  return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-     {isLoading?null: <TemporaryDrawer />}
-
+      {isLoading ? null : <TemporaryDrawer />}
+      <Analytics />
       <Routes>
-        
-       
-        <Route path="/" element={isLoading?<Loader/>:<Home />} />
+
+
+        <Route path="/" element={isLoading ? <Loader /> : <Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/frequently-asked" element={<FrequentlyAsked />} />
@@ -43,7 +44,7 @@ function App() {
       </Routes>
 
       <Footer />
-      {isLoading?null:<WhatsAppButton />}
+      {isLoading ? null : <WhatsAppButton />}
     </div>
   );
 }
