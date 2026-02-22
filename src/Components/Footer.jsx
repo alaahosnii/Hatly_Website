@@ -9,20 +9,16 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 // import Link  from 'react-router-dom';
 
-
-
-
 function Footer() {
   const footerLinks = [
-
     {
       title: "App",
-      links: ["Trade", "Download"],
+      links: ["Download"],
     },
     {
       title: "Need Help",
       links: ["About Us", "FAQs"],
-    }
+    },
   ];
 
   return (
@@ -60,12 +56,13 @@ function Footer() {
           width: "300px",
           height: "300px",
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(65,65,218,0) 70%)",
+          background:
+            "radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(65,65,218,0) 70%)",
           transform: "translate(30%, 30%)",
           zIndex: 1,
         }}
       />
-      
+
       <Box
         sx={{
           position: "absolute",
@@ -74,7 +71,8 @@ function Footer() {
           width: "200px",
           height: "200px",
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(65,65,218,0) 70%)",
+          background:
+            "radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(65,65,218,0) 70%)",
           transform: "translate(-30%, -30%)",
           zIndex: 1,
         }}
@@ -161,10 +159,10 @@ function Footer() {
             >
               HATLY
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                mb: 2, 
+            <Typography
+              variant="body1"
+              sx={{
+                mb: 2,
                 opacity: 0.9,
                 fontStyle: "italic",
                 position: "relative",
@@ -176,20 +174,21 @@ function Footer() {
                   left: 0,
                   width: "100%",
                   height: "1px",
-                  background: "linear-gradient(90deg, rgba(255,255,255,0.5), transparent)",
-                }
+                  background:
+                    "linear-gradient(90deg, rgba(255,255,255,0.5), transparent)",
+                },
               }}
             >
               From here to here .. We make it Clear.
             </Typography>
-            
+
             {/* Social Icons */}
-            <Stack 
-              direction="row" 
-              spacing={1} 
-              sx={{ 
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{
                 mb: 3,
-                justifyContent: { xs: "center", md: "flex-start" }
+                justifyContent: { xs: "center", md: "flex-start" },
               }}
             >
               <IconButton
@@ -254,7 +253,8 @@ function Footer() {
                   color: "white",
                   bgcolor: "rgba(255,255,255,0.2)",
                   "&:hover": {
-                    background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+                    background:
+                      "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
                     transform: "translateY(-3px)",
                     boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
                   },
@@ -267,11 +267,11 @@ function Footer() {
             </Stack>
 
             {/* Contact Info */}
-            <Stack 
-              spacing={1.5} 
-              sx={{ 
+            <Stack
+              spacing={1.5}
+              sx={{
                 opacity: 0.9,
-                alignItems: { xs: "center", md: "flex-start" }
+                alignItems: { xs: "center", md: "flex-start" },
               }}
             >
               <Stack direction="row" alignItems="center" spacing={1.5}>
@@ -280,11 +280,11 @@ function Footer() {
                   href="mailto:hatly160@gmail.com"
                   underline="hover"
                   color="inherit"
-                  sx={{ 
-                    cursor: 'pointer',
+                  sx={{
+                    cursor: "pointer",
                     "&:hover": {
                       color: "white",
-                    }
+                    },
                   }}
                 >
                   <Typography variant="body2">Hatly160@gmail.com</Typography>
@@ -297,11 +297,11 @@ function Footer() {
                   href="tel:+15551234567"
                   underline="hover"
                   color="inherit"
-                  sx={{ 
-                    cursor: 'pointer',
+                  sx={{
+                    cursor: "pointer",
                     "&:hover": {
                       color: "white",
-                    }
+                    },
                   }}
                 >
                   <Typography variant="body2">+1 (555) 123-4567</Typography>
@@ -309,15 +309,18 @@ function Footer() {
               </Stack>
 
               <Stack direction="row" alignItems="flex-start" spacing={1.5}>
-                <LocationOnIcon fontSize="small" sx={{ color: "#E0E0FF", mt: 0.5 }} />
-                <Typography 
-                  variant="body2" 
+                <LocationOnIcon
+                  fontSize="small"
+                  sx={{ color: "#E0E0FF", mt: 0.5 }}
+                />
+                <Typography
+                  variant="body2"
                   color="inherit"
-                  sx={{ 
-                    cursor: 'pointer',
+                  sx={{
+                    cursor: "pointer",
                     "&:hover": {
                       color: "white",
-                    }
+                    },
                   }}
                 >
                   Cairo, Egypt
@@ -361,7 +364,7 @@ function Footer() {
                     },
                     "&:hover:after": {
                       width: "60px",
-                    }
+                    },
                   }}
                 >
                   {section.title}
@@ -408,8 +411,9 @@ function Footer() {
               top: 0,
               width: "100px",
               height: "1px",
-              background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)",
-            }
+              background:
+                "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)",
+            },
           }}
         />
 
@@ -420,9 +424,9 @@ function Footer() {
           alignItems="center"
           spacing={2}
         >
-          <Typography 
-            variant="body2" 
-            sx={{ 
+          <Typography
+            variant="body2"
+            sx={{
               opacity: 0.8,
               fontSize: "0.85rem",
             }}
@@ -470,14 +474,16 @@ function Footer() {
                 },
                 "&:hover:after": {
                   width: "100%",
-                }
+                },
               },
             }}
           >
-            <Link href="#">Cookie policy</Link>
-            <Link href="/privacy-policy" target='_blank'>Privacy policy</Link>
-            <Link href="/terms-of-service" target='_blank'>Terms of service</Link>
-            <Link href="#">Help center</Link>
+            <Link href="/privacy-policy" target="_blank">
+              Privacy policy
+            </Link>
+            <Link href="/terms-of-service" target="_blank">
+              Terms of service
+            </Link>
           </Stack>
         </Stack>
       </Box>
