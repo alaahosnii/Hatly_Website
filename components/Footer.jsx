@@ -16,17 +16,21 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
-// import Link  from 'react-router-dom';
 
 function Footer() {
   const footerLinks = [
     {
       title: "App",
-      links: ["Download"],
+      links: [
+        { name: "Download", href: "#" },
+      ],
     },
     {
       title: "Need Help",
-      links: ["About Us", "FAQs"],
+      links: [
+        { name: "About Us", href: "/about-us" },
+        { name: "FAQs", href: "/frequently-asked" },
+      ],
     },
   ];
 
@@ -56,7 +60,6 @@ function Footer() {
         },
       }}
     >
-      {/* Background decorative elements */}
       <Box
         sx={{
           position: "absolute",
@@ -71,7 +74,6 @@ function Footer() {
           zIndex: 1,
         }}
       />
-
       <Box
         sx={{
           position: "absolute",
@@ -86,8 +88,6 @@ function Footer() {
           zIndex: 1,
         }}
       />
-
-      {/* Animated floating circles */}
       <Box
         sx={{
           position: "absolute",
@@ -121,26 +121,14 @@ function Footer() {
         }}
       />
 
-      <Box
-        sx={{
-          width: "100%",
-          maxWidth: "1400px",
-          position: "relative",
-          zIndex: 2,
-        }}
-      >
+      <Box sx={{ width: "100%", maxWidth: "1400px", position: "relative", zIndex: 2 }}>
         <Stack
           direction={{ xs: "column", md: "row" }}
           justifyContent="space-between"
           alignItems={{ xs: "center", md: "flex-start" }}
           spacing={{ xs: 4, md: 0 }}
-          sx={{
-            width: "100%",
-            flexWrap: "wrap",
-            textAlign: { xs: "center", md: "left" },
-          }}
+          sx={{ width: "100%", flexWrap: "wrap", textAlign: { xs: "center", md: "left" } }}
         >
-          {/* Brand Info Column */}
           <Box
             sx={{
               flex: { xs: "1 1 100%", md: "1" },
@@ -183,221 +171,36 @@ function Footer() {
                   left: 0,
                   width: "100%",
                   height: "1px",
-                  background:
-                    "linear-gradient(90deg, rgba(255,255,255,0.5), transparent)",
+                  background: "linear-gradient(90deg, rgba(255,255,255,0.5), transparent)",
                 },
               }}
             >
               From here to here .. We make it Clear.
             </Typography>
 
-            {/* Social Icons */}
-            <Stack
-              direction="row"
-              spacing={1}
-              sx={{
-                mb: 3,
-                justifyContent: { xs: "center", md: "flex-start" },
-              }}
-            >
-              <IconButton
-                href="https://web.facebook.com/profile.php?id=61561175183049"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: "white",
-                  bgcolor: "rgba(255,255,255,0.2)",
-                  "&:hover": {
-                    bgcolor: "#1877F2",
-                    transform: "translateY(-3px)",
-                    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                  },
-                  transition: "all 0.3s ease",
-                  backdropFilter: "blur(5px)",
-                }}
-              >
-                <FacebookIcon />
-              </IconButton>
-              <IconButton
-                href="https://x.com/Hatly_1"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: "white",
-                  bgcolor: "rgba(255,255,255,0.2)",
-                  "&:hover": {
-                    bgcolor: "#1DA1F2",
-                    transform: "translateY(-3px)",
-                    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                  },
-                  transition: "all 0.3s ease",
-                  backdropFilter: "blur(5px)",
-                }}
-              >
-                <TwitterIcon />
-              </IconButton>
-              <IconButton
-                href="https://www.linkedin.com/yourpage"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: "white",
-                  bgcolor: "rgba(255,255,255,0.2)",
-                  "&:hover": {
-                    bgcolor: "#0A66C2",
-                    transform: "translateY(-3px)",
-                    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                  },
-                  transition: "all 0.3s ease",
-                  backdropFilter: "blur(5px)",
-                }}
-              >
-                <LinkedInIcon />
-              </IconButton>
-              <IconButton
-                href="https://www.instagram.com/hatly_2025/profilecard/?igsh=NHdieXB4aDk1NG4="
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: "white",
-                  bgcolor: "rgba(255,255,255,0.2)",
-                  "&:hover": {
-                    background:
-                      "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
-                    transform: "translateY(-3px)",
-                    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-                  },
-                  transition: "all 0.3s ease",
-                  backdropFilter: "blur(5px)",
-                }}
-              >
-                <InstagramIcon />
-              </IconButton>
+            <Stack direction="row" spacing={1} sx={{ mb: 3, justifyContent: { xs: "center", md: "flex-start" } }}>
+              <IconButton href="https://www.facebook.com/people/Hatly-Travel-Shop-Connect/61561175183049/" target="_blank" rel="noopener noreferrer" sx={{ color: "white", bgcolor: "rgba(255,255,255,0.2)", "&:hover": { bgcolor: "#1877F2", transform: "translateY(-3px)", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }, transition: "all 0.3s ease", backdropFilter: "blur(5px)" }}><FacebookIcon /></IconButton>
+             
+              
+              <IconButton href="https://www.instagram.com/hatly_1?igsh=Z3dmYWdqczBjbHU4" target="_blank" rel="noopener noreferrer" sx={{ color: "white", bgcolor: "rgba(255,255,255,0.2)", "&:hover": { background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)", transform: "translateY(-3px)", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }, transition: "all 0.3s ease", backdropFilter: "blur(5px)" }}><InstagramIcon /></IconButton>
             </Stack>
 
-            {/* Contact Info */}
-            <Stack
-              spacing={1.5}
-              sx={{
-                opacity: 0.9,
-                alignItems: { xs: "center", md: "flex-start" },
-              }}
-            >
-              <Stack direction="row" alignItems="center" spacing={1.5}>
-                <EmailIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
-                <MuiLink
-                  href="mailto:hatly160@gmail.com"
-                  underline="hover"
-                  color="inherit"
-                  sx={{
-                    cursor: "pointer",
-                    "&:hover": {
-                      color: "white",
-                    },
-                  }}
-                >
-                  <Typography variant="body2">Hatly160@gmail.com</Typography>
-                </MuiLink>
-              </Stack>
-
-              <Stack direction="row" alignItems="center" spacing={1.5}>
-                <PhoneIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
-                <MuiLink
-                  href="tel:+15551234567"
-                  underline="hover"
-                  color="inherit"
-                  sx={{
-                    cursor: "pointer",
-                    "&:hover": {
-                      color: "white",
-                    },
-                  }}
-                >
-                  <Typography variant="body2">+1 (555) 123-4567</Typography>
-                </MuiLink>
-              </Stack>
-
-              <Stack direction="row" alignItems="flex-start" spacing={1.5}>
-                <LocationOnIcon
-                  fontSize="small"
-                  sx={{ color: "#E0E0FF", mt: 0.5 }}
-                />
-                <Typography
-                  variant="body2"
-                  color="inherit"
-                  sx={{
-                    cursor: "pointer",
-                    "&:hover": {
-                      color: "white",
-                    },
-                  }}
-                >
-                  Cairo, Egypt
-                </Typography>
-              </Stack>
+            <Stack spacing={1.5} sx={{ opacity: 0.9, alignItems: { xs: "center", md: "flex-start" } }}>
+              <Stack direction="row" alignItems="center" spacing={1.5}><EmailIcon fontSize="small" sx={{ color: "#E0E0FF" }} /><MuiLink href="mailto:support@hatly.com" underline="hover" color="inherit" sx={{ cursor: "pointer", "&:hover": { color: "white" } }}><Typography variant="body2">support@hatly.com</Typography></MuiLink></Stack>
+              <Stack direction="row" alignItems="center" spacing={1.5}><PhoneIcon fontSize="small" sx={{ color: "#E0E0FF" }} /><MuiLink href="tel:+201552622553" underline="hover" color="inherit" sx={{ cursor: "pointer", "&:hover": { color: "white" } }}><Typography variant="body2">+201552622553</Typography></MuiLink></Stack>
+              <Stack direction="row" alignItems="flex-start" spacing={1.5}><LocationOnIcon fontSize="small" sx={{ color: "#E0E0FF", mt: 0.5 }} /><Typography variant="body2" color="inherit" sx={{ cursor: "pointer", "&:hover": { color: "white" } }}>Alexandria, Egypt</Typography></Stack>
             </Stack>
           </Box>
 
-          {/* Links Columns */}
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={{ xs: 4, sm: 6, md: 8 }}
-            sx={{
-              flex: { xs: "1 1 100%", md: "2" },
-              justifyContent: "space-around",
-              alignItems: { xs: "center", md: "flex-start" },
-              width: "100%",
-            }}
-          >
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={{ xs: 4, sm: 6, md: 8 }} sx={{ flex: { xs: "1 1 100%", md: "2" }, justifyContent: "space-around", alignItems: { xs: "center", md: "flex-start" }, width: "100%" }}>
             {footerLinks.map((section, index) => (
               <Box key={index}>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: "bold",
-                    mb: 3,
-                    position: "relative",
-                    fontSize: "1.1rem",
-                    letterSpacing: "0.5px",
-                    "&:after": {
-                      content: '""',
-                      position: "absolute",
-                      bottom: -8,
-                      left: { xs: "50%", md: 0 },
-                      transform: { xs: "translateX(-50%)", md: "none" },
-                      width: "40px",
-                      height: "3px",
-                      background: "linear-gradient(90deg, #FFFFFF, #E0E0FF)",
-                      borderRadius: "2px",
-                      transition: "width 0.3s ease",
-                    },
-                    "&:hover:after": {
-                      width: "60px",
-                    },
-                  }}
-                >
-                  {section.title}
-                </Typography>
+                <Typography variant="h6" sx={{ fontWeight: "bold", mb: 3, position: "relative", fontSize: "1.1rem", letterSpacing: "0.5px", "&:after": { content: '""', position: "absolute", bottom: -8, left: { xs: "50%", md: 0 }, transform: { xs: "translateX(-50%)", md: "none" }, width: "40px", height: "3px", background: "linear-gradient(90deg, #FFFFFF, #E0E0FF)", borderRadius: "2px", transition: "width 0.3s ease" }, "&:hover:after": { width: "60px" } }}>{section.title}</Typography>
                 <Stack spacing={1.5}>
                   {section.links.map((link, idx) => (
-                    <MuiLink
-                      key={idx}
-                      href="#"
-                      underline="none"
-                      sx={{
-                        color: "rgba(255,255,255,0.9)",
-                        "&:hover": {
-                          color: "white",
-                          transform: "translateX(5px)",
-                          textShadow: "0 0 5px rgba(255,255,255,0.5)",
-                        },
-                        transition: "all 0.2s ease",
-                        fontSize: "0.95rem",
-                        display: "inline-block",
-                      }}
-                    >
-                      {link}
-                    </MuiLink>
+                    <Link key={idx} href={link.href} passHref legacyBehavior>
+                      <MuiLink underline="none" sx={{ color: "rgba(255,255,255,0.9)", "&:hover": { color: "white", transform: "translateX(5px)", textShadow: "0 0 5px rgba(255,255,255,0.5)" }, transition: "all 0.2s ease", fontSize: "0.95rem", display: "inline-block" }}>{link.name}</MuiLink>
+                    </Link>
                   ))}
                 </Stack>
               </Box>
@@ -405,88 +208,11 @@ function Footer() {
           </Stack>
         </Stack>
 
-        {/* Divider */}
-        <Box
-          sx={{
-            width: "100%",
-            height: "1px",
-            bgcolor: "rgba(255,255,255,0.2)",
-            my: 5,
-            position: "relative",
-            "&:before": {
-              content: '""',
-              position: "absolute",
-              left: 0,
-              top: 0,
-              width: "100px",
-              height: "1px",
-              background:
-                "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)",
-            },
-          }}
-        />
+        <Box sx={{ width: "100%", height: "1px", bgcolor: "rgba(255,255,255,0.2)", my: 5, position: "relative", "&:before": { content: '""', position: "absolute", left: 0, top: 0, width: "100px", height: "1px", background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent)" } }} />
 
-        {/* Bottom Section */}
-        <Stack
-          direction={{ xs: "column-reverse", md: "row" }}
-          justifyContent="space-between"
-          alignItems="center"
-          spacing={2}
-        >
-          <Typography
-            variant="body2"
-            sx={{
-              opacity: 0.8,
-              fontSize: "0.85rem",
-            }}
-          >
-            © {new Date().getFullYear()} HATLY. All rights reserved.
-          </Typography>
-
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={{ xs: 1, sm: 3 }}
-            divider={
-              <Box
-                sx={{
-                  width: "1px",
-                  height: "16px",
-                  bgcolor: "rgba(255,255,255,0.3)",
-                  display: { xs: "none", sm: "block" },
-                  my: "auto",
-                }}
-              />
-            }
-            sx={{
-              textAlign: { xs: "center", sm: "left" },
-              justifyContent: { xs: "center", sm: "flex-start" },
-              "& a": {
-                color: "rgba(255,255,255,0.9)",
-                textDecoration: "none",
-                fontSize: "0.85rem",
-                "&:hover": {
-                  color: "white",
-                  textDecoration: "underline",
-                  textShadow: "0 0 5px rgba(255,255,255,0.3)",
-                },
-                transition: "all 0.2s ease",
-                position: "relative",
-                "&:after": {
-                  content: '""',
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  width: "0%",
-                  height: "1px",
-                  bgcolor: "white",
-                  transition: "width 0.3s ease",
-                },
-                "&:hover:after": {
-                  width: "100%",
-                },
-              },
-            }}
-          >
+        <Stack direction={{ xs: "column-reverse", md: "row" }} justifyContent="space-between" alignItems="center" spacing={2}>
+          <Typography variant="body2" sx={{ opacity: 0.8, fontSize: "0.85rem" }}>© {new Date().getFullYear()} HATLY. All rights reserved.</Typography>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={{ xs: 1, sm: 3 }} divider={<Box sx={{ width: "1px", height: "16px", bgcolor: "rgba(255,255,255,0.3)", display: { xs: "none", sm: "block" }, my: "auto" }} />} sx={{ textAlign: { xs: "center", sm: "left" }, justifyContent: { xs: "center", sm: "flex-start" }, "& a": { color: "rgba(255,255,255,0.9)", textDecoration: "none", fontSize: "0.85rem", "&:hover": { color: "white", textDecoration: "underline", textShadow: "0 0 5px rgba(255,255,255,0.3)" }, transition: "all 0.2s ease", position: "relative", "&:after": { content: '""', position: "absolute", bottom: 0, left: 0, width: "0%", height: "1px", bgcolor: "white", transition: "width 0.3s ease" }, "&:hover:after": { width: "100%" } } }}>
             <Link href="/privacy-policy">Privacy policy</Link>
             <Link href="/terms-of-service">Terms of service</Link>
           </Stack>
