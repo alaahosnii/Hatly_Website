@@ -277,7 +277,7 @@ function Footer() {
               <Stack direction="row" alignItems="center" spacing={1.5}>
                 <EmailIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
                 <Link
-                  href="mailto:hatly160@gmail.com"
+                  href="mailto:support@hatly.tech"
                   underline="hover"
                   color="inherit"
                   sx={{ 
@@ -287,14 +287,14 @@ function Footer() {
                     }
                   }}
                 >
-                  <Typography variant="body2">Hatly160@gmail.com</Typography>
+                  <Typography variant="body2">support@hatly.tech</Typography>
                 </Link>
               </Stack>
 
               <Stack direction="row" alignItems="center" spacing={1.5}>
                 <PhoneIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
                 <Link
-                  href="tel:+15551234567"
+                  href="tel:+201552622553"
                   underline="hover"
                   color="inherit"
                   sx={{ 
@@ -304,7 +304,7 @@ function Footer() {
                     }
                   }}
                 >
-                  <Typography variant="body2">+1 (555) 123-4567</Typography>
+                  <Typography variant="body2">+201552622553</Typography>
                 </Link>
               </Stack>
 
