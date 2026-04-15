@@ -415,7 +415,7 @@ function PrivacyPolicy() {
             </ListItem>
           </List>
           <Typography variant="body1" sx={{ mb: 2, color: '#475569', lineHeight: 1.7 }}>
-            To exercise your rights, contact us at privacy@haily.net.
+            To exercise your rights, contact us at support@hatly.tech
           </Typography>
         </Box>
 
@@ -444,7 +444,7 @@ function PrivacyPolicy() {
             7. Children's Privacy
           </Typography>
           <Typography variant="body1" sx={{ mb: 2, color: '#475569', lineHeight: 1.7 }}>
-            Haily is not intended for children under the age of 18. We do not knowingly collect personal information from minors.
+            Hatly is not intended for children under the age of 18. We do not knowingly collect personal information from minors.
           </Typography>
         </Box>
 
@@ -507,13 +507,13 @@ function PrivacyPolicy() {
           <List dense sx={{ pl: 2 }}>
             <ListItem sx={{ px: 0, py: 0.5 }}>
               <ListItemText
-                primary="Email: privacy@haily.net"
+                primary="Email: support@hatly.tech"
                 sx={{ m: 0, color: '#475569' }}
               />
             </ListItem>
             <ListItem sx={{ px: 0, py: 0.5 }}>
               <ListItemText
-                primary="Website: www.haily.net"
+                primary="Website: www.hatly.tech"
                 sx={{ m: 0, color: '#475569' }}
               />
             </ListItem>

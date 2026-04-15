@@ -753,13 +753,13 @@ function TermsOfService() {
           <List dense sx={{ pl: 2 }}>
             <ListItem sx={{ px: 0, py: 0.5 }}>
               <ListItemText
-                primary="Email: support@hatly.net"
+                primary="Email: support@hatly.tech"
                 sx={{ m: 0, color: '#475569' }}
               />
             </ListItem>
             <ListItem sx={{ px: 0, py: 0.5 }}>
               <ListItemText
-                primary="Website: www.hatly.net"
+                primary="Website: www.hatly.tech"
                 sx={{ m: 0, color: '#475569' }}
               />
             </ListItem>

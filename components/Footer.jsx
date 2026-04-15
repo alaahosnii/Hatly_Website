@@ -68,7 +68,7 @@ function Footer() {
           zIndex: 1,
         }}
       />
-      
+
       <Box
         sx={{
           position: "absolute",
@@ -164,10 +164,10 @@ function Footer() {
             >
               HATLY
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                mb: 2, 
+            <Typography
+              variant="body1"
+              sx={{
+                mb: 2,
                 opacity: 0.9,
                 fontStyle: "italic",
                 position: "relative",
@@ -185,12 +185,12 @@ function Footer() {
             >
               From here to here .. We make it Clear.
             </Typography>
-            
+
             {/* Social Icons */}
-            <Stack 
-              direction="row" 
-              spacing={1} 
-              sx={{ 
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{
                 mb: 3,
                 justifyContent: { xs: "center", md: "flex-start" }
               }}
@@ -270,9 +270,9 @@ function Footer() {
             </Stack>
 
             {/* Contact Info */}
-            <Stack 
-              spacing={1.5} 
-              sx={{ 
+            <Stack
+              spacing={1.5}
+              sx={{
                 opacity: 0.9,
                 alignItems: { xs: "center", md: "flex-start" }
               }}
@@ -280,50 +280,50 @@ function Footer() {
               <Stack direction="row" alignItems="center" spacing={1.5}>
                 <EmailIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
                 <MuiLink
-                  href="mailto:hatly160@gmail.com"
+                  href="mailto:support@hatly.tech"
                   underline="hover"
                   color="inherit"
-                  sx={{ 
+                  sx={{
                     cursor: 'pointer',
                     "&:hover": {
                       color: "white",
                     }
                   }}
                 >
-                  <Typography variant="body2">Hatly160@gmail.com</Typography>
+                  <Typography variant="body2">support@hatly.tech</Typography>
                 </MuiLink>
               </Stack>
 
               <Stack direction="row" alignItems="center" spacing={1.5}>
                 <PhoneIcon fontSize="small" sx={{ color: "#E0E0FF" }} />
                 <MuiLink
-                  href="tel:+15551234567"
+                  href="tel:+201552622553"
                   underline="hover"
                   color="inherit"
-                  sx={{ 
+                  sx={{
                     cursor: 'pointer',
                     "&:hover": {
                       color: "white",
                     }
                   }}
                 >
-                  <Typography variant="body2">+1 (555) 123-4567</Typography>
+                  <Typography variant="body2">+201552622553</Typography>
                 </MuiLink>
               </Stack>
 
               <Stack direction="row" alignItems="flex-start" spacing={1.5}>
                 <LocationOnIcon fontSize="small" sx={{ color: "#E0E0FF", mt: 0.5 }} />
-                <Typography 
-                  variant="body2" 
+                <Typography
+                  variant="body2"
                   color="inherit"
-                  sx={{ 
+                  sx={{
                     cursor: 'pointer',
                     "&:hover": {
                       color: "white",
                     }
                   }}
                 >
-                  Cairo, Egypt
+                  Alexandria, Egypt
                 </Typography>
               </Stack>
             </Stack>
@@ -423,9 +423,9 @@ function Footer() {
           alignItems="center"
           spacing={2}
         >
-          <Typography 
-            variant="body2" 
-            sx={{ 
+          <Typography
+            variant="body2"
+            sx={{
               opacity: 0.8,
               fontSize: "0.85rem",
             }}
@@ -477,10 +477,9 @@ function Footer() {
               },
             }}
           >
-            <MuiLink href="#" component="span" sx={{ cursor: 'pointer' }}>Cookie policy</MuiLink>
             <Link href="/privacy-policy">Privacy policy</Link>
             <Link href="/terms-of-service">Terms of service</Link>
-            <MuiLink href="#" component="span" sx={{ cursor: 'pointer' }}>Help center</MuiLink>
+            <Link href="/refund-policy">Refund policy</Link>
           </Stack>
         </Stack>
       </Box>

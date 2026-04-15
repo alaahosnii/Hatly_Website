@@ -1,4 +1,4 @@
-// File: D:\front-end-projects\hatly\Hatly_Website\app\layout.tsx
+// File: /Users/alaahosni/Desktop/Hatly/Hatly_Website/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
